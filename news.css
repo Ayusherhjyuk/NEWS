@@ -1,0 +1,195 @@
+body {
+    background-color: #bfb8b8;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.left {
+    width: 13%;
+height: 100vh;
+background-color: rgb(153, 150, 150);
+position: fixed;
+}
+
+.right {
+    width: 85%;
+ position: relative;
+    height: 100vh;
+    left: 175px;
+}
+
+.container {
+    display: flex;
+}
+
+.nav {
+    width: 99vw;
+    height: 57px;
+    background-color: #7b7474;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav img {
+    width: 108px;
+height: 67px;
+z-index: 1;
+position: relative;
+left: 15px;
+}
+
+.nav input {
+    position: absolute;
+    top: 16px;
+    right: 93px;
+    height: 27px;
+    width: 144px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.searchbar{
+    position: relative;
+}
+.nav button {
+    position: absolute;
+    right: 28px;
+    height: 26px;
+    top: 15px;
+    width: 58px;
+    background-color: #b0b0ff;
+}
+
+.nav input:hover {
+    box-shadow: 2px 4px 5px rgb(38, 41, 42);
+}
+.left h2{
+    
+    
+    display: flex;
+justify-content: center;
+top: 76px;
+position: absolute;
+}
+
+.left ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: absolute;
+    left: 5px;
+    font-size: 21px;
+    top: 130px;
+
+}
+
+.left ul li:hover {
+    cursor: pointer;
+    color: rgb(6, 6, 8);
+    box-shadow: 2px 2px 2px rgb(38, 41, 42);
+}
+
+.carddata {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: auto;
+    max-height: 80vh;
+    padding-top: 100px;
+}
+
+.card {
+    width: 255px;
+    padding: 5px;
+
+    padding-top: 10px;
+    border-radius: 11px;
+    background-color: #252525;
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+    margin: auto;
+    height: 400px;
+
+    overflow-y: hidden;
+    text-overflow: clip;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.close{
+    position: relative;
+top: 50px;
+left: 137px;
+
+}
+
+.card img {
+    width: 100%;
+    height: 30vh;
+}
+
+.card p {
+    font-size: 17px;
+}
+
+#type {
+    position: relative;
+    margin: 10px;
+    left:-159px;
+
+}
+
+.card:hover{
+    transform: scale(1.06);
+}
+
+
+
+.hamburger img{
+    height: 21px;
+    width: 32px;
+    position:relative;
+    left: -222px;
+    top: 18px;
+    opacity: 0;
+  
+}
+
+@media (max-width:850px) {
+    .hamburger img{
+        opacity: 1;
+    }
+    .left{
+        left: 100%;
+    }
+    
+    .right{
+        width: 100vw;
+        left: -3%;
+    }
+
+}
+@media (max-width:500px) {
+    .hamburger img{
+        left: -353%;
+    }
+    #type{
+        opacity: 0;
+    }
+    .nav .logo{
+        opacity: 0;
+    }
+    body{
+        background-color: #252525;
+    }
+    .close{
+        left: 90px;
+        top: 15px;
+    }
+}
+
+
